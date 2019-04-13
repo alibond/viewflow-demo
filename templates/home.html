@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block title %}django-bootstrap4{% endblock %}
+
+{% block content %}
+
+
+
+    <h1>Indice delle Applicazioni Informatiche</h1>
+
+    <div id="app-table">
+    </div>
+    <script>
+      $(document).ready(function () {
+        // $("p").text("Il DOM è stato caricato è può essere manipolato!");
+        //$('#app-table').load('{% url 'get-apptable' %}');
+      });
+    </script>
+
+
+
+{% endblock %}
